@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d4effaf5d2613f4da5579d7bf6ee01b, type: 3}
+  m_Name: Day1
+  m_EditorClassIdentifier: 
+  serializedKey: firstLevelProgress
+  maxTricksCount: 3
+  levelResults:
+  - starCount: 1
+    successTricks: 2
+    failedTricks: 1000
+  - starCount: 2
+    successTricks: 3
+    failedTricks: 1000
+  - starCount: 3
+    successTricks: 3
+    failedTricks: 0
+  levelIndex: 1
