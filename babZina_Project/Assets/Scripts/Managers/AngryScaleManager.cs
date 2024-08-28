@@ -39,23 +39,25 @@ public class AngryScaleManager : MonoBehaviour, IAngryScaleManager
 
     private void OnTimer(int secondsFromStart)
     {
-        currentProgress.Set(currentProgress.Value - config.decreasePointInSecond);
+        int newValue = currentProgress.Value + config.pointDeltaInSecond; 
+
+        currentProgress.Set(Math.Clamp(newValue, 0, 100));
     }
 
-    public void AddPoints(PlayerPhysics.TricksType type)
+    public void LosePoints(PlayerPhysics.TricksType type)
     {
-        int progress = currentProgress.Value + GetScoreByType(type);
+        int progress = currentProgress.Value - GetScoreByType(type);
 
-        currentProgress.Set(progress);
+        currentProgress.Set(Math.Clamp(progress, 0, 100));
 
         OnSuccessTrick();
     }
 
-    public void DeprivePoints()
+    public void AddPoints()
     {
-        int progress = currentProgress.Value - config.trickFailScore;
+        int progress = currentProgress.Value + config.trickFailScore;
 
-        currentProgress.Set(progress);
+        currentProgress.Set(Math.Clamp(progress, 0, 100));
 
         OnFailTrick();
     }

@@ -9,6 +9,6 @@ public interface IAngryScaleManager
 
     IStatefulEvent<int> Progress { get; }
 
-    void AddPoints(PlayerPhysics.TricksType type);
-    void DeprivePoints();
+    void LosePoints(PlayerPhysics.TricksType type);
+    void AddPoints();
 }

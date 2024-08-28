@@ -129,7 +129,7 @@ public class PlayerPhysics : MonoBehaviour, IPlayerPhysics
     {
         currentState.Set(State.FailInteract);
 
-        angryScaleManager.DeprivePoints();
+        angryScaleManager.AddPoints();
     }
 
     private void SuccessInteract()
@@ -156,6 +156,6 @@ public class PlayerPhysics : MonoBehaviour, IPlayerPhysics
 
     private void AddPoints(TricksType type)
     {
-        angryScaleManager.AddPoints(type);
+        angryScaleManager.LosePoints(type);
     }
 }

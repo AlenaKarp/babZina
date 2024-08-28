@@ -10,6 +10,8 @@ public class Scenario : MonoBehaviour, IScenario
 
     [SerializeField] private LevelSettings levelSettings;
 
+    private const int AngryPointsToEndLevel = 100;
+
     private IAngryScaleManager angryScaleManager;
     private ISaveManager saveManager;
     private int successTricksCounter = 0;
@@ -71,7 +73,7 @@ public class Scenario : MonoBehaviour, IScenario
 
     private void OnProgressValueChanged(int progress)
     {
-        if (progress <= 0)
+        if (progress >= AngryPointsToEndLevel)
         {
             int levelStarCount = GetStarCount();
 

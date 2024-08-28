@@ -13,7 +13,7 @@ public class AngryScaleConfig : ScriptableObject
     }
 
     public int startValue;
-    public int decreasePointInSecond;
+    public int pointDeltaInSecond;
     public TrickScore[] tricksScore;
     public int trickFailScore;
 }
