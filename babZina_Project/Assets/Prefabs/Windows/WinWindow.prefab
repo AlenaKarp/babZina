@@ -347,7 +347,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 29.15
+  m_fontSize: 29.25
   m_fontSizeBase: 36.45
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -862,7 +862,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 49.9
+  m_fontSize: 50.05
   m_fontSizeBase: 36.45
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1510,8 +1510,8 @@ MonoBehaviour:
   - {fileID: 517268486871797816}
   tricks:
   - {fileID: 4074173058971670823}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 5896245948851384470}
+  - {fileID: 838392418401481978}
   nextLevel: {fileID: 5059309085103457593}
   backButton: {fileID: 7446373172058514793}
   loadingScreen: {fileID: 0}
@@ -1830,7 +1830,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35.55
+  m_fontSize: 35.7
   m_fontSizeBase: 38
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1964,7 +1964,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36.15
+  m_fontSize: 36.25
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2299,7 +2299,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1947036353198875627, guid: a7a9bf2a92ebf7a439eeb9c2843c3649, type: 3}
       propertyPath: m_Name
-      value: Trick (4)
+      value: Trick3
       objectReference: {fileID: 0}
     - target: {fileID: 4689363229297950194, guid: a7a9bf2a92ebf7a439eeb9c2843c3649, type: 3}
       propertyPath: m_AnchorMax.x
@@ -2461,6 +2461,17 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 8314903654878748261}
   m_SourcePrefab: {fileID: 100100000, guid: a7a9bf2a92ebf7a439eeb9c2843c3649, type: 3}
+--- !u!114 &838392418401481978 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2197851156068236958, guid: a7a9bf2a92ebf7a439eeb9c2843c3649, type: 3}
+  m_PrefabInstance: {fileID: 1522995734873606756}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019933041052838287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ad5ee2fb581de54095f200ae54200da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1019933041052838287 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1947036353198875627, guid: a7a9bf2a92ebf7a439eeb9c2843c3649, type: 3}
@@ -2501,7 +2512,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1947036353198875627, guid: a7a9bf2a92ebf7a439eeb9c2843c3649, type: 3}
       propertyPath: m_Name
-      value: Trick
+      value: Trick1
       objectReference: {fileID: 0}
     - target: {fileID: 4689363229297950194, guid: a7a9bf2a92ebf7a439eeb9c2843c3649, type: 3}
       propertyPath: m_AnchorMax.x
@@ -2835,7 +2846,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1947036353198875627, guid: a7a9bf2a92ebf7a439eeb9c2843c3649, type: 3}
       propertyPath: m_Name
-      value: Trick (3)
+      value: Trick2
       objectReference: {fileID: 0}
     - target: {fileID: 4689363229297950194, guid: a7a9bf2a92ebf7a439eeb9c2843c3649, type: 3}
       propertyPath: m_AnchorMax.x
@@ -3002,6 +3013,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 9215856592945540801, guid: a7a9bf2a92ebf7a439eeb9c2843c3649, type: 3}
   m_PrefabInstance: {fileID: 5716186715568180744}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5896245948851384470 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2197851156068236958, guid: a7a9bf2a92ebf7a439eeb9c2843c3649, type: 3}
+  m_PrefabInstance: {fileID: 5716186715568180744}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6077250044171349475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ad5ee2fb581de54095f200ae54200da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6077250044171349475 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1947036353198875627, guid: a7a9bf2a92ebf7a439eeb9c2843c3649, type: 3}
