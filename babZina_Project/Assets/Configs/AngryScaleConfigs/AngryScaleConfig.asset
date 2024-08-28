@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b42896f74fbddc847ad769039d9651fc, type: 3}
   m_Name: AngryScaleConfig
   m_EditorClassIdentifier: 
-  startValue: 70
-  decreasePointInSecond: 1
+  startValue: 30
+  pointDeltaInSecond: 1
   tricksScore:
   - type: 1
     score: 5
