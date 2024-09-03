@@ -7,6 +7,7 @@ public class ControlsManager : MonoBehaviour, IControlsManager
 {
     public event Action<Vector3> OnNewClickPosition = (position) => { };
     public event Action<Collider, Vector3> OnInteractiveObjectClick = (collider, position) => { };
+    public event Action OnReset = () => { };
 
     [SerializeField] private ClickRegistrator clickRegistrator;
     [SerializeField] private PointerRegistrator pointerRegistrator;
@@ -37,14 +38,23 @@ public class ControlsManager : MonoBehaviour, IControlsManager
         if (this.uiManager != null)
         {
             this.uiManager.OnStackChanged -= OnStackChanged;
+            this.uiManager.OnSceneReload -= OnSceneReload;
         }
 
         this.uiManager = uiManager;
         this.uiManager.OnStackChanged += OnStackChanged;
+        this.uiManager.OnSceneReload += OnSceneReload;
     }
 
     private void OnStackChanged()
     {
         clickRegistrator.gameObject.SetActive(clickRegistrator.gameObject.activeInHierarchy == false);
+        pointerRegistrator.gameObject.SetActive(pointerRegistrator.gameObject.activeInHierarchy == false);
+        OnReset();
+    }
+
+    private void OnSceneReload()
+    {
+        OnReset();
     }
 }

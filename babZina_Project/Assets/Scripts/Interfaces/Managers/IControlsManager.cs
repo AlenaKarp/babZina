@@ -6,4 +6,5 @@ public interface IControlsManager
 {
     event Action<Vector3> OnNewClickPosition;
     event Action<Collider, Vector3> OnInteractiveObjectClick;
+    event Action OnReset;
 }

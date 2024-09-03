@@ -7,6 +7,7 @@ public class UIManager : MonoBehaviour, IUIManager
 {
     public event Action OnWinWindowOpen = () => { };
     public event Action OnStackChanged = () => { };
+    public event Action OnSceneReload = () => {};
 
     internal event Action OnInited = () => { };
 

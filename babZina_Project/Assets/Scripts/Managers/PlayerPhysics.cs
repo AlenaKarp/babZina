@@ -44,12 +44,15 @@ public class PlayerPhysics : MonoBehaviour, IPlayerPhysics
         if (controls != null)
         {
             controls.OnNewClickPosition -= ChangePointToGo;
+            controls.OnInteractiveObjectClick -= OnInteract;
+            controls.OnReset -= OnReset;
         }
 
         this.controls = controlsManager;
 
         controls.OnNewClickPosition += ChangePointToGo;
         controls.OnInteractiveObjectClick += OnInteract;
+        controls.OnReset += OnReset;
 
         this.angryScaleManager = angryScaleManager;
     }
@@ -86,6 +89,12 @@ public class PlayerPhysics : MonoBehaviour, IPlayerPhysics
             isMovingForward.Set(movingSign > 0);
             pointToGo = newPointToGo;
         }
+    }
+
+    private void OnReset()
+    {
+        pointToGo = null;
+        currentState.Set(State.None);
     }
 
     private void OnInteract(Collider collider, Vector3 position)
