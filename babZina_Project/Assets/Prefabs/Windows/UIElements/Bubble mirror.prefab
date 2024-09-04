@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8891020736875545438}
   - component: {fileID: 5725549239708506131}
   - component: {fileID: 2437961466787448286}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,7 +146,7 @@ GameObject:
   - component: {fileID: 6072022934548676281}
   - component: {fileID: 7583891573910959406}
   - component: {fileID: 8898776377575431575}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -220,7 +220,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8810142304941790098}
   - component: {fileID: 6549498304369303840}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Bubble mirror
   m_TagString: Untagged
   m_Icon: {fileID: 0}
