@@ -28405,10 +28405,6 @@ PrefabInstance:
       propertyPath: field of view
       value: 40
       objectReference: {fileID: 0}
-    - target: {fileID: 991419751420889125, guid: 1e1f7c727db45264b8eaa98e6d741307, type: 3}
-      propertyPath: near clip plane
-      value: 0.01
-      objectReference: {fileID: 0}
     - target: {fileID: 3684625513259543680, guid: 1e1f7c727db45264b8eaa98e6d741307, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -28486,6 +28482,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3684625513259543680, guid: 1e1f7c727db45264b8eaa98e6d741307, type: 3}
   m_PrefabInstance: {fileID: 1895339883790210343}
   m_PrefabAsset: {fileID: 0}
+--- !u!20 &6439524857523819696 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 4832450534826000791, guid: 1e1f7c727db45264b8eaa98e6d741307, type: 3}
+  m_PrefabInstance: {fileID: 1895339883790210343}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7987355632564758894 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8400708864471661641, guid: 1e1f7c727db45264b8eaa98e6d741307, type: 3}
@@ -28507,14 +28508,15 @@ MonoBehaviour:
   m_RequiresDepthTextureOption: 2
   m_RequiresOpaqueTextureOption: 2
   m_CameraType: 0
-  m_Cameras: []
+  m_Cameras:
+  - {fileID: 6439524857523819696}
   m_RendererIndex: -1
   m_VolumeLayerMask:
     serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
