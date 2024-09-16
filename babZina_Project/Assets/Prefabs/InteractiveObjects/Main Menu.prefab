@@ -666,10 +666,6 @@ PrefabInstance:
       propertyPath: loadingScreen
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 2248267512097050766, guid: 345371156cd03ba4bbc58c735651fa27, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: cc137f91f623aeb47858f80c7a4b081f, type: 3}
     - target: {fileID: 2265770909500476600, guid: 345371156cd03ba4bbc58c735651fa27, type: 3}
       propertyPath: loadingScreen
       value: 
@@ -730,18 +726,10 @@ PrefabInstance:
       propertyPath: loadingScreen
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 4141624384161806085, guid: 345371156cd03ba4bbc58c735651fa27, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 34cc886d11f26424eaf534c74f98d0dc, type: 3}
     - target: {fileID: 4295235899999616552, guid: 345371156cd03ba4bbc58c735651fa27, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -0.00000011920929
       objectReference: {fileID: 0}
-    - target: {fileID: 4315180450639107727, guid: 345371156cd03ba4bbc58c735651fa27, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 4447541ef12ec9a4896675da51bf9a78, type: 3}
     - target: {fileID: 4355099676393498545, guid: 345371156cd03ba4bbc58c735651fa27, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -0.00000011920929
