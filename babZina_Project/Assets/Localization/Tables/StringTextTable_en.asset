@@ -1,0 +1,246 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: StringTextTable_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 61e52559df5611946a71d07e071d1ecd, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 273659924480
+    m_Localized: New game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7259055132672
+    m_Localized: <rotate=90>Soon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9995913990144
+    m_Localized: Tutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10246888558592
+    m_Localized: 'Follow
+
+      for updates!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10383727726592
+    m_Localized: Be Quiet!!!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10553798365184
+    m_Localized: Exit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10644433080320
+    m_Localized: Loading...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10777765810176
+    m_Localized: Pause
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10863505772544
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10940949401600
+    m_Localized: Restart
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11014576214016
+    m_Localized: To flat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11136664014848
+    m_Localized: Level lost
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11233867010048
+    m_Localized: Start again
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11418991005696
+    m_Localized: Back to flat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11494790467584
+    m_Localized: Babzina is kind today
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11604018532352
+    m_Localized: wait bad tomorrow
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11801788354560
+    m_Localized: Level passed!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11915449798656
+    m_Localized: Tricks done
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12062808281088
+    m_Localized: Continue tricking
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12266672427008
+    m_Localized: again Babzina shizing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12618788442112
+    m_Localized: Thank you for playing!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12811613179904
+    m_Localized: "Thanks to your cunning, you are now\r\nthe most evil creature in
+      the quarter. \r\n\r\nNew places and atrocities lie ahead"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12931335393280
+    m_Localized: "Women say there are a lot of interesting things there \u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13155319615488
+    m_Localized: Click here to come
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13253797679104
+    m_Localized: Click to interract
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13338052857856
+    m_Localized: Come here
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13420106027008
+    m_Localized: The action can be canceled by clicking elsewhere!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13503136468992
+    m_Localized: in order to stay alive and pass the level, you need to maintain
+      the level of anger. It increases with time and with failure in performing dirty
+      tricks and decreases with a successful outcome. If the anger level rises to
+      100%, the game is over
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13684980518912
+    m_Localized: "\rThey're not greeting\r\nme again, you bastards\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14026963095552
+    m_Localized: 'Where are you littering, not at home
+
+      Are you at home'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14152486031360
+    m_Localized: Oh, you rascals. Now you're going to kick the air
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14281192443904
+    m_Localized: They put up their clunkers here
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14491746504704
+    m_Localized: 'and Masha is
+
+      a courtesan, darling'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14602371272704
+    m_Localized: 'That''s it, have a good jump,
+
+      my sons'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14720659034112
+    m_Localized: We went for a ride ourselves, now let others take a ride
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14944706170880
+    m_Localized: "I'm going to file the steps for her now \u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15106346258432
+    m_Localized: 'You will know how to ignore babzine,
+
+      herod'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15225166696448
+    m_Localized: 'let them buy themselves
+
+      new trousers!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15321946066944
+    m_Localized: You're going to get such money now, you'll just fly away
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15443304058880
+    m_Localized: "lyinishna has completely lost her temper. I've planted some weeds
+      here\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15570223697920
+    m_Localized: "There were artists in my time, not that it's\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15770703040512
+    m_Localized: 'Oh, Babzina is coming...
+
+      mom, why is she such a dirty girl?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15867574685696
+    m_Localized: "Babzina used to be God's dandelion, she lived with her grandfather
+      soul to soul\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15943390924800
+    m_Localized: .. But everything changed when black realtors came and started bothering
+      the old people.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16023426633728
+    m_Localized: ".My grandfather tried to get rid of realtors on his own, but one
+      day his heart couldn't stand it\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16106855534592
+    m_Localized: "Honey, I'm not feeling well.\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16183267364864
+    m_Localized: realtors were afraid of punishment for what they had done and disappeared.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16260144762880
+    m_Localized: 'Since then, Babzina has been left
+
+      all alone and became
+
+      embittered
+      at the neighbors
+
+      because
+
+      no one helped her.'
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
