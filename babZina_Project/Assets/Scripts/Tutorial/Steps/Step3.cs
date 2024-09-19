@@ -1,15 +1,17 @@
-﻿//this empty line for UTF-8 BOM header
+//this empty line for UTF-8 BOM header
 using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Localization.Settings;
+using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class Step3 : TutorialStep
 {
     [Serializable]
     public struct StateMessage
     {
-        public string message;
+        public string messageLocalizationKey;
         public IInteractiveObject.State state;
     }
 
@@ -19,10 +21,24 @@ public class Step3 : TutorialStep
     [SerializeField] private InteractiveObject interactiveObject;
     [SerializeField] private GameObject textPopup;
 
+    private Dictionary<IInteractiveObject.State, string> stateLocalization;
+
     private void Awake()
     {
+        stateLocalization = new Dictionary<IInteractiveObject.State, string>();
+        foreach(StateMessage stateMessage in stateMessages)
+        {
+            LocalizationSettings.StringDatabase.GetLocalizedStringAsync(stateMessage.messageLocalizationKey).Completed += 
+            asyncResult => CacheLocalization(stateMessage.state, asyncResult.Result); 
+        }
+
         interactiveObject.CurrentState.OnValueChanged += OnInteractiveObjectValueChanged;
         interactiveObject.OnGameOver += OnGameOverMessage;
+    }
+
+    private void CacheLocalization(IInteractiveObject.State state, string message)
+    {
+        stateLocalization.Add(state, message);
     }
 
     private void OnGameOverMessage()
@@ -49,15 +65,6 @@ public class Step3 : TutorialStep
 
     private string GetMessageByState(IInteractiveObject.State state)
     {
-        foreach (StateMessage stateMessage in stateMessages)
-        {
-            if (stateMessage.state == state)
-            {
-                return stateMessage.message;
-            }
-        }
-
-        return "";
+        return stateLocalization[state];
     }
-
 }
