@@ -127,7 +127,7 @@ public class InteractiveObject : MonoBehaviour, IInteractiveObject
         return false;
     }
 
-    private void ProcessDone()
+    protected virtual void ProcessDone()
     {
         if (currentState.Value != IInteractiveObject.State.InProcess)
         {

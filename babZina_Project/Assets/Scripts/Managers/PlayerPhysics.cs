@@ -1,6 +1,7 @@
 ﻿//this empty line for UTF-8 BOM header
 using System;
 using UnityEngine;
+using UnityTools.Runtime.Promises;
 using UnityTools.Runtime.StatefulEvent;
 using UnityTools.UnityRuntime.Timers;
 
@@ -12,6 +13,7 @@ public class PlayerPhysics : MonoBehaviour, IPlayerPhysics
         None = 0,
         Permanent = 1,
         Timing = 2,
+        DoubleTiming = 3
     }
 
     public enum State
@@ -130,8 +132,18 @@ public class PlayerPhysics : MonoBehaviour, IPlayerPhysics
 
         currentState.Set(State.Interact);
 
-        Timer.Instance.WaitUnscaled(currentIntractiveObject.SecondsToInteract)
+        if(interactiveObject is TimingInteractiveObject timingInteractiveObject)
+        {
+            Timer.Instance
+            .WaitUnscaled(currentIntractiveObject.SecondsToInteract)
+            .Done(() => DeferredInteract(timingInteractiveObject.AddPointsPromise));
+        }
+        else
+        {
+            Timer.Instance
+            .WaitUnscaled(currentIntractiveObject.SecondsToInteract)
             .Done(SuccessInteract);
+        }
     }
 
     private void OnGameOver()
@@ -139,6 +151,19 @@ public class PlayerPhysics : MonoBehaviour, IPlayerPhysics
         currentState.Set(State.FailInteract);
 
         angryScaleManager.AddPoints();
+    }
+
+    private void DeferredInteract(IPromise interactPromise)
+    {
+        if (currentState.Value != State.Interact)
+        {
+            return;
+        }
+
+        interactPromise.Done(() => AddPoints(currentIntractiveObject.TrickType))        ;
+
+        currentState.Set(State.SuccessInteract);
+        CancelInteraction();
     }
 
     private void SuccessInteract()
