@@ -22,6 +22,7 @@ public class Step3 : TutorialStep
     [SerializeField] private GameObject textPopup;
 
     private Dictionary<IInteractiveObject.State, string> stateLocalization;
+    private string gameOverLocalizedMessage;
 
     private void Awake()
     {
@@ -29,21 +30,33 @@ public class Step3 : TutorialStep
         foreach(StateMessage stateMessage in stateMessages)
         {
             LocalizationSettings.StringDatabase.GetLocalizedStringAsync(stateMessage.messageLocalizationKey).Completed += 
-            asyncResult => CacheLocalization(stateMessage.state, asyncResult.Result); 
+            asyncResult => CacheLocalization(stateMessage.messageLocalizationKey, stateMessage.state, asyncResult.Result); 
         }
+
+        LocalizationSettings.StringDatabase.GetLocalizedStringAsync(gameOverMessage).Completed += CacheGameOverMessage; 
 
         interactiveObject.CurrentState.OnValueChanged += OnInteractiveObjectValueChanged;
         interactiveObject.OnGameOver += OnGameOverMessage;
     }
 
-    private void CacheLocalization(IInteractiveObject.State state, string message)
+    private void CacheLocalization(string key, IInteractiveObject.State state, string message)
     {
         stateLocalization.Add(state, message);
+        
+        LocalizationSettings.StringDatabase.GetLocalizedStringAsync(key).Completed -= 
+        asyncResult => CacheLocalization(key, state, message); 
+    }
+
+    private void CacheGameOverMessage(AsyncOperationHandle<string> messageGetter)
+    {
+        gameOverLocalizedMessage = messageGetter.Result;
+
+        LocalizationSettings.StringDatabase.GetLocalizedStringAsync(gameOverMessage).Completed -= CacheGameOverMessage; 
     }
 
     private void OnGameOverMessage()
     {
-        SetMessage(gameOverMessage);
+        SetMessage(gameOverLocalizedMessage);
     }
 
     private void OnInteractiveObjectValueChanged(IInteractiveObject.State state)
