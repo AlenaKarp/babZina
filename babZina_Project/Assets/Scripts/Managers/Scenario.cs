@@ -65,7 +65,7 @@ public class Scenario : MonoBehaviour, IScenario
     {
         successTricksCounter++;
 
-        if (successTricksCounter >= levelSettings.maxTricksCount - levelSettings.skippableTricks)
+        if (successTricksCounter >= levelSettings.maxTricksCount)
         {
             Win(GetStarCount());
         }

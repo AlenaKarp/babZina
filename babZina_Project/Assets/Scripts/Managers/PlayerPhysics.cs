@@ -160,7 +160,7 @@ public class PlayerPhysics : MonoBehaviour, IPlayerPhysics
             return;
         }
 
-        interactPromise.Done(() => AddPoints(currentIntractiveObject.TrickType))        ;
+        interactPromise.Done(() => LosePoints(currentIntractiveObject.TrickType))        ;
 
         currentState.Set(State.SuccessInteract);
         CancelInteraction();
@@ -173,7 +173,7 @@ public class PlayerPhysics : MonoBehaviour, IPlayerPhysics
             return;
         }
 
-        AddPoints(currentIntractiveObject.TrickType);
+        LosePoints(currentIntractiveObject.TrickType);
 
         currentState.Set(State.SuccessInteract);
         CancelInteraction();
@@ -188,7 +188,7 @@ public class PlayerPhysics : MonoBehaviour, IPlayerPhysics
         }
     }
 
-    private void AddPoints(TricksType type)
+    private void LosePoints(TricksType type)
     {
         angryScaleManager.LosePoints(type);
     }

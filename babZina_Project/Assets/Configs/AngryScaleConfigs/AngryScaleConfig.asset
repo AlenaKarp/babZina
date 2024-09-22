@@ -19,4 +19,6 @@ MonoBehaviour:
     score: 5
   - type: 2
     score: 10
+  - type: 3
+    score: 10
   trickFailScore: 7

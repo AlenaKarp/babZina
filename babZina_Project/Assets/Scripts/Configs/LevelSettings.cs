@@ -15,7 +15,6 @@ public class LevelSettings : ScriptableObject
 
     public string serializedKey;
     public int maxTricksCount;
-    public int skippableTricks;
     public LevelResult[] levelResults;
     public int levelIndex;
 }
