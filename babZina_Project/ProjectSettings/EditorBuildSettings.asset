@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Day3.unity
     guid: 9fbd9a0d2cfe62a4aabae1448bba84a5
+  - enabled: 1
+    path: Assets/Scenes/Day4.unity
+    guid: 1643438e4b2a1f244917753488beb648
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: ea7678b714dd91c4b8127c875d683b87, type: 2}
     com.unity.localization.settings: {fileID: 11400000, guid: fc96f7b55d9894d48bad7d7d438ed4f4, type: 2}
