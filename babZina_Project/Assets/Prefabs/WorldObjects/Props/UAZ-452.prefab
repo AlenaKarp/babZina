@@ -68,6 +68,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UAZ-452
       objectReference: {fileID: 0}
+    - target: {fileID: 6544865345516568903, guid: 36d11572807398e408d7faa3b9333190, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5c8e283229f2a5b4ba457d37bb670132, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

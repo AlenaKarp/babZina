@@ -3,7 +3,17 @@ guid: 1810b7f6b6e56184fabac65083c7dfbb
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Aquarium_Glass
+    second: {fileID: 2100000, guid: 43a80f5c82872834dbe7cc071ab8c56e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Axe_Plant_Speaker_Aquarium_Atlas
+    second: {fileID: 2100000, guid: 807beec31d8dd8743a916f2f2da2afc1, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

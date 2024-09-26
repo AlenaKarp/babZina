@@ -3,7 +3,12 @@ guid: 25b1c26435030c940898e3efbe8a6581
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Axe_Plant_Speaker_Aquarium_Atlas
+    second: {fileID: 2100000, guid: 807beec31d8dd8743a916f2f2da2afc1, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
