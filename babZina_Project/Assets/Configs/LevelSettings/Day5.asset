@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6d4effaf5d2613f4da5579d7bf6ee01b, type: 3}
-  m_Name: Day4
+  m_Name: Day5
   m_EditorClassIdentifier: 
-  serializedKey: fourthLevelProgress
-  maxTricksCount: 5
+  serializedKey: fifthLevelProgress
+  maxTricksCount: 6
   levelResults:
   - starCount: 1
     successTricks: 3
     failedTricks: 1000
   - starCount: 2
-    successTricks: 5
+    successTricks: 6
     failedTricks: 1000
   - starCount: 3
-    successTricks: 5
+    successTricks: 6
     failedTricks: 0
-  levelIndex: 4
+  levelIndex: 5
