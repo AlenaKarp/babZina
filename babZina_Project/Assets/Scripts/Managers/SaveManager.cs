@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class SaveManager : MonoBehaviour, ISaveManager
 {
-    public const int maxLevelIndex = 3;
+    public const int maxLevelIndex = 6;
 
     private int[] savedProgress;
 
