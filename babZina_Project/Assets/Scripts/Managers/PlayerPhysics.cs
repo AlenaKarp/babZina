@@ -161,9 +161,9 @@ public class PlayerPhysics : MonoBehaviour, IPlayerPhysics
 
     private void SuccessInteractWithLosePoints()
     {
-        SuccessInteract();
-
         LosePoints(currentIntractiveObject.TrickType);
+        
+        SuccessInteract();
     }
 
     private void SuccessInteract()
