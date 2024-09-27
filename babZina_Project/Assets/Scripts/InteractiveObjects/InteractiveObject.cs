@@ -14,7 +14,7 @@ public class InteractiveObject : MonoBehaviour, IInteractiveObject
     public TricksType TrickType => trickType;
 
     [SerializeField] private PlayerPhysics playerPhysics;
-    [SerializeField] private List<Observer> observers;
+    [SerializeField] protected List<Observer> observers;
     [SerializeField] private float secondsToInteract;
     [SerializeField] private GameObject standartView;
     [SerializeField] private GameObject afterInteractView;
@@ -25,7 +25,7 @@ public class InteractiveObject : MonoBehaviour, IInteractiveObject
     private StatefulEventInt<IInteractiveObject.State> currentState = StatefulEventInt.CreateEnum(IInteractiveObject.State.None);
     private bool canInteract = false;
 
-    private void Awake()
+    protected virtual void Awake()
     {
         foreach (Observer observer in observers)
         {

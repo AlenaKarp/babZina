@@ -12,8 +12,10 @@ public class TimingInteractiveObject : InteractiveObject
     private Deferred addPointsDeferred;
     private bool canAddPoints = false;
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
+
         addPointsDeferred = Deferred.GetFromPool();
 
         Timer.Instance.WaitUnscaled(secondsWithAddPoints)
@@ -32,6 +34,10 @@ public class TimingInteractiveObject : InteractiveObject
         if(canAddPoints)
         {
             addPointsDeferred.Resolve();
+            foreach(Observer observer in observers)
+            {
+                observer.SetDissapointState();
+            }
         }
         else
         {

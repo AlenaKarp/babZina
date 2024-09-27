@@ -136,13 +136,18 @@ public class PlayerPhysics : MonoBehaviour, IPlayerPhysics
         {
             Timer.Instance
             .WaitUnscaled(currentIntractiveObject.SecondsToInteract)
-            .Done(() => DeferredInteract(timingInteractiveObject.AddPointsPromise));
+            .Then(() =>
+            {
+                SuccessInteract();
+                return timingInteractiveObject.AddPointsPromise;
+            })
+            .Done(() => LosePoints(timingInteractiveObject.TrickType));
         }
         else
         {
             Timer.Instance
             .WaitUnscaled(currentIntractiveObject.SecondsToInteract)
-            .Done(SuccessInteract);
+            .Done(SuccessInteractWithLosePoints);
         }
     }
 
@@ -153,17 +158,11 @@ public class PlayerPhysics : MonoBehaviour, IPlayerPhysics
         angryScaleManager.AddPoints();
     }
 
-    private void DeferredInteract(IPromise interactPromise)
+    private void SuccessInteractWithLosePoints()
     {
-        if (currentState.Value != State.Interact)
-        {
-            return;
-        }
+        SuccessInteract();
 
-        interactPromise.Done(() => LosePoints(currentIntractiveObject.TrickType))        ;
-
-        currentState.Set(State.SuccessInteract);
-        CancelInteraction();
+        LosePoints(currentIntractiveObject.TrickType);
     }
 
     private void SuccessInteract()
@@ -172,8 +171,6 @@ public class PlayerPhysics : MonoBehaviour, IPlayerPhysics
         {
             return;
         }
-
-        LosePoints(currentIntractiveObject.TrickType);
 
         currentState.Set(State.SuccessInteract);
         CancelInteraction();
