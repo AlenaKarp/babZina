@@ -7,6 +7,7 @@ public class AngryScaleManager : MonoBehaviour, IAngryScaleManager
 {
     public event Action OnSuccessTrick = () => { };
     public event Action OnFailTrick = () => { };
+    public event Action OnCloseTrick = () => { };
     public IStatefulEvent<int> Progress => currentProgress;
 
     [SerializeField] private AngryScaleConfig config;
@@ -63,6 +64,11 @@ public class AngryScaleManager : MonoBehaviour, IAngryScaleManager
         currentProgress.Set(Math.Clamp(progress, 0, 100));
 
         OnFailTrick();
+    }
+
+    public void ReduceTrickCountToWin()
+    {
+        OnCloseTrick();
     }
 
     private int GetScoreByType(PlayerPhysics.TricksType type)

@@ -24,6 +24,11 @@ public class TimingInteractiveObject : InteractiveObject
 
     protected override void ProcessDone()
     {
+        if (CurrentState.Value != IInteractiveObject.State.InProcess)
+        {
+            return;
+        }
+
         base.ProcessDone();
 
         canAddPoints = true;
@@ -34,6 +39,7 @@ public class TimingInteractiveObject : InteractiveObject
         if(canAddPoints)
         {
             addPointsDeferred.Resolve();
+
             foreach(Observer observer in observers)
             {
                 observer.SetDissapointState();

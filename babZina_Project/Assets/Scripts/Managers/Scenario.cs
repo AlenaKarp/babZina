@@ -16,11 +16,13 @@ public class Scenario : MonoBehaviour, IScenario
     private ISaveManager saveManager;
     private int successTricksCounter = 0;
     private int failTricksCounter = 0;
+    private int availableTrickCount;
 
     private void OnEnable()
     {
         successTricksCounter = 0;
         failTricksCounter = 0;
+        availableTrickCount = levelSettings.maxTricksCount;
     }
 
     internal void Init(IAngryScaleManager angryScaleManager, ISaveManager saveManager)
@@ -47,6 +49,12 @@ public class Scenario : MonoBehaviour, IScenario
         angryScaleManager.Progress.OnValueChanged += OnProgressValueChanged;
         angryScaleManager.OnSuccessTrick += OnSuccessTrick;
         angryScaleManager.OnFailTrick += OnFailTrick;
+        angryScaleManager.OnCloseTrick += OnCloseTrick;
+    }
+
+    private void OnCloseTrick()
+    {
+        availableTrickCount--;
     }
 
     private void Unsubscribe()
@@ -54,6 +62,7 @@ public class Scenario : MonoBehaviour, IScenario
         angryScaleManager.Progress.OnValueChanged -= OnProgressValueChanged;
         angryScaleManager.OnSuccessTrick -= OnSuccessTrick;
         angryScaleManager.OnFailTrick -= OnFailTrick;
+        angryScaleManager.OnCloseTrick -= OnCloseTrick;
     }
 
     private void OnFailTrick()
@@ -65,7 +74,7 @@ public class Scenario : MonoBehaviour, IScenario
     {
         successTricksCounter++;
 
-        if (successTricksCounter >= levelSettings.maxTricksCount)
+        if (successTricksCounter >= availableTrickCount)
         {
             Win(GetStarCount());
         }

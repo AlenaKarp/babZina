@@ -141,6 +141,7 @@ public class PlayerPhysics : MonoBehaviour, IPlayerPhysics
                 SuccessInteract();
                 return timingInteractiveObject.AddPointsPromise;
             })
+            .Fail((exc) => SetTrickUnavailable())
             .Done(() => LosePoints(timingInteractiveObject.TrickType));
         }
         else
@@ -188,5 +189,10 @@ public class PlayerPhysics : MonoBehaviour, IPlayerPhysics
     private void LosePoints(TricksType type)
     {
         angryScaleManager.LosePoints(type);
+    }
+
+    private void SetTrickUnavailable()
+    {
+        angryScaleManager.ReduceTrickCountToWin();
     }
 }
