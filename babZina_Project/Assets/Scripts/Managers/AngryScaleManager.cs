@@ -51,10 +51,7 @@ public class AngryScaleManager : MonoBehaviour, IAngryScaleManager
 
         currentProgress.Set(Math.Clamp(progress, 0, 100));
 
-        if(type != PlayerPhysics.TricksType.DoubleTiming)
-        {
-            OnSuccessTrick();
-        }
+        OnSuccessTrick();
     }
 
     public void AddPoints()
