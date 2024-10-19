@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: Day4
   m_EditorClassIdentifier: 
   serializedKey: fourthLevelProgress
-  maxTricksCount: 5
+  maxTricksCount: 7
   levelResults:
   - starCount: 1
-    successTricks: 3
+    successTricks: 4
     failedTricks: 1000
   - starCount: 2
-    successTricks: 5
+    successTricks: 7
     failedTricks: 1000
   - starCount: 3
-    successTricks: 5
+    successTricks: 7
     failedTricks: 0
   levelIndex: 4

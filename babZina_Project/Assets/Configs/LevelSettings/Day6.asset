@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: Day6
   m_EditorClassIdentifier: 
   serializedKey: sixthLevelProgress
-  maxTricksCount: 4
+  maxTricksCount: 5
   levelResults:
   - starCount: 1
     successTricks: 3
     failedTricks: 1000
   - starCount: 2
-    successTricks: 4
+    successTricks: 5
     failedTricks: 1000
   - starCount: 3
-    successTricks: 4
+    successTricks: 5
     failedTricks: 0
   levelIndex: 6
