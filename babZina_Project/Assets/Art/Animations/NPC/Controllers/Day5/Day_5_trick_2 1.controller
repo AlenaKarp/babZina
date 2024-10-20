@@ -200,7 +200,7 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Transform changing
@@ -233,7 +233,7 @@ AnimatorController:
       m_Motion: {fileID: -203655887218126122, guid: 9b2b7bc74783ee84182a735695134110, type: 3}
     - serializedVersion: 2
       m_State: {fileID: 153359465534491619}
-      m_Motion: {fileID: -203655887218126122, guid: 19f1a9739cdb69d41998abd76e7220a0, type: 3}
+      m_Motion: {fileID: -203655887218126122, guid: 7ebb92cea0ffa35458ec594752d6ff52, type: 3}
     m_Behaviours: []
     m_BlendingMode: 0
     m_SyncedLayerIndex: 0
@@ -249,7 +249,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: DissapointState
-  m_Speed: 0.05
+  m_Speed: 0.5
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -300,7 +300,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: StateB
-  m_Speed: 0.01
+  m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1309361135361965107}
@@ -328,7 +328,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: StateA
-  m_Speed: 0.01
+  m_Speed: 0.5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -1214157652663278107}
