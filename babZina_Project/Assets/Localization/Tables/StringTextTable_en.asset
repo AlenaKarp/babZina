@@ -241,6 +241,97 @@ MonoBehaviour:
       no one helped her.'
     m_Metadata:
       m_Items: []
+  - m_Id: 12271369562034176
+    m_Localized: 'You''ve finished spinning the sun,
+
+      now you''ll just look
+      at it'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12271917879201792
+    m_Localized: Now everyone will know who you are
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12272331240443904
+    m_Localized: 'next time you will think
+
+      before throwing garbage out of
+      the window'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12272748351393792
+    m_Localized: Let's see how you talk at night now.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12273620242337792
+    m_Localized: 'Honey, don''t go to this store,
+
+      they sell one overdue'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12274547774918656
+    m_Localized: 'That''s it, boys.
+
+      It''s time to grow up, not play on the
+      roller coaster'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12275175246991360
+    m_Localized: 'Run, run, thief.
+
+      Here''s a little present for you, for
+      last'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12275590793465856
+    m_Localized: Kid, you're actually adopted.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12275880938639360
+    m_Localized: 'all sorts
+
+      of people drive here, they don''t let you pass'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12276118034255872
+    m_Localized: 'that''s because dried apricots are old,
+
+      they don''t understand
+      the first time'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12277268590563328
+    m_Localized: 'They can''t even leave without their farts.
+
+      Will the fish
+      listen to your boo-boo-boo'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12277604126494720
+    m_Localized: 'You''ll be like Carlson now,
+
+      living on the roof!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12277926341316608
+    m_Localized: 'Didn''t you like our bench?
+
+      Let no one get it!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12278704481177600
+    m_Localized: 'These crooks have come here again!
+
+      You won''t come here
+      anymore!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12279332402040832
+    m_Localized: 'These brats
+
+      are doodling again'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
