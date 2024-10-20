@@ -19,8 +19,7 @@ public class SwitcherAfterInteraction : MonoBehaviour
 
     private void OnValueChanged(IInteractiveObject.State state)
     {
-        if (state == IInteractiveObject.State.AfterInteract
-            || state == IInteractiveObject.State.InProcess)
+        if (state == IInteractiveObject.State.AfterInteract)
         {
             gameObject.SetActive(false);
         }
