@@ -1747,7 +1747,7 @@ MonoBehaviour:
   stateMessages:
   - messageLocalizationKey: Tutor_3
     state: 0
-  - messageLocalizationKey: Tutor_3
+  - messageLocalizationKey: Tutor_3_1
     state: 1
   gameOverMessage: try_once_more
   message: {fileID: 1943372028527682500}
