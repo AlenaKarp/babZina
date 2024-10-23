@@ -271,6 +271,10 @@ MonoBehaviour:
     m_Key: lvl_6_trick_5
     m_Metadata:
       m_Items: []
+  - m_Id: 13394121155448832
+    m_Key: try_once_more
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -67,7 +67,10 @@ public class Step3 : TutorialStep
             return;
         }
 
-        SetMessage(GetMessageByState(state));
+        if(TryGetMessageByState(state, out string message))
+        {
+            SetMessage(message);
+        }
     }
 
     private void SetMessage(string newMessage)
@@ -76,8 +79,15 @@ public class Step3 : TutorialStep
         this.message.text = newMessage;
     }
 
-    private string GetMessageByState(IInteractiveObject.State state)
+    private bool TryGetMessageByState(IInteractiveObject.State state, out string message)
     {
-        return stateLocalization[state];
+        if(stateLocalization.ContainsKey(state))
+        {
+            message = stateLocalization[state];
+            return true;
+        }
+
+        message = "";
+        return false;
     }
 }
