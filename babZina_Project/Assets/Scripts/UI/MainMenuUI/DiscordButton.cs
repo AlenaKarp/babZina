@@ -1,12 +1,11 @@
 ﻿//this empty line for UTF-8 BOM header
-using System;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DiscordButton : MonoBehaviour
+public class URLButton : MonoBehaviour
 {
     [SerializeField] private Button button;
+    [SerializeField] private string URL;
 
     private void Awake()
     {
@@ -15,6 +14,6 @@ public class DiscordButton : MonoBehaviour
 
     private void OnClick()
     {
-        Application.OpenURL("https://discord.gg/4AnSY8CT");
+        Application.OpenURL(URL);
     }
 }
