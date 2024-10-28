@@ -19,7 +19,7 @@ MonoBehaviour:
     successTricks: 3
     failedTricks: 1000
   - starCount: 2
-    successTricks: 6
+    successTricks: 5
     failedTricks: 1000
   - starCount: 3
     successTricks: 6
