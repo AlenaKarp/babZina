@@ -97,21 +97,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b291730b382af1548907c5c346aafb58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputAction:
-    m_Name: Input
-    m_Type: 1
+  movingInputAction:
+    m_Name: Moving Input
+    m_Type: 0
     m_ExpectedControlType: Button
-    m_Id: e0a2726d-f4cc-4aea-a660-b4696eff7cb9
+    m_Id: 2155e5ab-f659-4f1a-8cb9-4003b380ec5e
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings:
     - m_Name: 
-      m_Id: 45769e9c-4f4f-4a73-a81e-438e4d526ba6
+      m_Id: dfafed08-c281-4c21-8794-24d133929ba5
       m_Path: <Mouse>/leftButton
       m_Interactions: 
       m_Processors: 
       m_Groups: 
-      m_Action: Input
+      m_Action: Moving Input
+      m_Flags: 0
+    m_Flags: 0
+  interactionInputAction:
+    m_Name: Interaction Input
+    m_Type: 1
+    m_ExpectedControlType: Button
+    m_Id: 841d3d81-c3b4-4325-9c67-5de8cf657043
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 62f0032e-b2b5-4819-b8ab-3a715ee1cb4b
+      m_Path: <Mouse>/rightButton
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Interaction Input
       m_Flags: 0
     m_Flags: 0
   movingClickCatcherMask:
