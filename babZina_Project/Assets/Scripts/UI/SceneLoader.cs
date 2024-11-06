@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class LoadingScreen : MonoBehaviour
+public class SceneLoader : MonoBehaviour
 {
     [SerializeField] private GameObject loadingScreen;
     [SerializeField] private string loadingSceneName;
