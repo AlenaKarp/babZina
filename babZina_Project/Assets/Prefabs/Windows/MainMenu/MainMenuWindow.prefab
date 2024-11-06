@@ -1293,13 +1293,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: "\u041D\u043E\u0432\u0430\u044F \u0438\u0433\u0440\u0430"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 568b54aff7599e04687d733ee4e89e72, type: 2}
   m_sharedMaterial: {fileID: 5206157742562857373, guid: 568b54aff7599e04687d733ee4e89e72, type: 2}
@@ -2694,18 +2694,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 0.0055007935
       objectReference: {fileID: 0}
-    - target: {fileID: 7269947230628605374, guid: 8abc76747683d054184aa7e9c6a73e37, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 4736361691802284519}
-    - target: {fileID: 7269947230628605374, guid: 8abc76747683d054184aa7e9c6a73e37, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Loading
-      objectReference: {fileID: 0}
-    - target: {fileID: 7269947230628605374, guid: 8abc76747683d054184aa7e9c6a73e37, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: LoadingScreen, Assembly-CSharp
-      objectReference: {fileID: 0}
     - target: {fileID: 7357003509828830342, guid: 8abc76747683d054184aa7e9c6a73e37, type: 3}
       propertyPath: loadingScreen
       value: 
@@ -2744,17 +2732,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2259408501969633229, guid: 8abc76747683d054184aa7e9c6a73e37, type: 3}
   m_PrefabInstance: {fileID: 2856333759802963297}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4736361691802284519 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7357003509828830342, guid: 8abc76747683d054184aa7e9c6a73e37, type: 3}
-  m_PrefabInstance: {fileID: 2856333759802963297}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83e94b92fdcb49e4384294a952113efe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5632681832511325880 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7604594204137796569, guid: 8abc76747683d054184aa7e9c6a73e37, type: 3}

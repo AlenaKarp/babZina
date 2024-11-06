@@ -223,7 +223,7 @@ GameObject:
   - component: {fileID: 7072431513503582172}
   - component: {fileID: 4847982648420209593}
   - component: {fileID: 3632889325025509585}
-  - component: {fileID: 6979184378316156644}
+  - component: {fileID: 7785586041696149592}
   m_Layer: 5
   m_Name: StartDay1Button
   m_TagString: Untagged
@@ -305,9 +305,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0.62352943}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -327,9 +327,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6979184378316156644}
-        m_TargetAssemblyTypeName: LoadingScreen, Assembly-CSharp
-        m_MethodName: Loading
+      - m_Target: {fileID: 7785586041696149592}
+        m_TargetAssemblyTypeName: LevelSelector, Assembly-CSharp
+        m_MethodName: SetNewSceneName
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -464,7 +464,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &6979184378316156644
+--- !u!114 &7785586041696149592
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -473,11 +473,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1611362620169194908}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83e94b92fdcb49e4384294a952113efe, type: 3}
+  m_Script: {fileID: 11500000, guid: c4f138b668de1924bafd201665153236, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadingScreen: {fileID: 0}
-  loadingSceneName: Day1
+  sceneName: Day1
+  sceneLoader: {fileID: 0}
 --- !u!1001 &1759080909944025490
 PrefabInstance:
   m_ObjectHideFlags: 0

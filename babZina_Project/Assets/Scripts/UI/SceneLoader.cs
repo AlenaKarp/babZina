@@ -1,14 +1,17 @@
 ﻿//this empty line for UTF-8 BOM header
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class SceneLoader : MonoBehaviour
 {
     [SerializeField] private GameObject loadingScreen;
     [SerializeField] private string loadingSceneName;
+
+    internal void SetNewSceneName(string sceneName)
+    {
+        loadingSceneName = sceneName;
+    }
 
     public void Loading()
     {
